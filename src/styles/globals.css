@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+/* =========================================
+   1. LIGHT MODE (Default Colors)
+   ========================================= */
+:root {
+  --primary-color: #f05a28; /* Orange */
+  --text-dark: #111827;
+  --text-gray: #6b7280;
+  --bg-light: #f9fafb;
+  --white: #ffffff;
+  --border-color: #eaeaea;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: var(--white);
+  color: var(--text-dark);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+}
+
+/* =========================================
+   2. DARK MODE (Pure Black & Gold Theme)
+   ========================================= */
+body.dark {
+  --primary-color: #e6b912; /* Golden Yellow */
+  --text-dark: #ffffff;     /* White Headings */
+  --text-gray: #a1a1aa;     /* Gray Text */
+  --bg-light: #121212;      
+  --white: #000000;         /* Pure Black Background */
+  --border-color: #27272a;  
+
+  background-color: #000000 !important; 
+  color: #ffffff !important;
+}
+
+/* --- Navbar & Top Bar --- */
+body.dark .navbar {
+  background-color: #000000 !important;
+  border-bottom: 1px solid #27272a !important;
+}
+body.dark .nav-top-bar {
+  background-color: #e6b912 !important; /* Top bar Golden */
+  color: #000000 !important; /* Top bar text black */
+}
+body.dark .nav-top-bar span, 
+body.dark .nav-top-bar a {
+  color: #000000 !important;
+}
+body.dark .nav-links a {
+  color: #a1a1aa !important;
+}
+body.dark .nav-links a:hover,
+body.dark .nav-links li.active a {
+  color: #e6b912 !important; /* Active link Golden */
+}
+
+/* --- Cards, Boxes & Sections --- */
+body.dark .product-card,
+body.dark .category-card,
+body.dark .feature-card,
+body.dark .review-card,
+body.dark .faq-item,
+body.dark .admin-form-card,
+body.dark .admin-list-card,
+body.dark .contact-form-container,
+body.dark .info-card,
+body.dark .collection-card,
+body.dark .cart-sidebar,
+body.dark .advanced-filters-panel,
+body.dark .comparison-box .local-bazaar,
+body.dark .cta-banner {
+  background-color: #121212 !important; /* Dark Gray Cards */
+  border: 1px solid #27272a !important;
+}
+
+/* --- Text Colors --- */
+body.dark h1, 
+body.dark h2, 
+body.dark h3, 
+body.dark h4, 
+body.dark h5, 
+body.dark h6,
+body.dark .product-name,
+body.dark .footer-logo,
+body.dark .comp-title {
+  color: #ffffff !important;
+}
+
+body.dark p, 
+body.dark span:not(.price):not(.cart-badge), 
+body.dark .desc, 
+body.dark .category,
+body.dark .hero-desc,
+body.dark .footer-col a,
+body.dark .footer-col p {
+  color: #a1a1aa !important;
+}
+
+/* Golden Text for Prices */
+body.dark .price {
+  color: #e6b912 !important; 
+}
+
+/* --- Inputs & Forms --- */
+body.dark input, 
+body.dark select, 
+body.dark textarea,
+body.dark .search-input-wrapper,
+body.dark .search-input-wrapper input {
+  background-color: #121212 !important;
+  color: #ffffff !important;
+  border: 1px solid #27272a !important;
+}
+body.dark input::placeholder,
+body.dark textarea::placeholder {
+  color: #71717a !important;
+}
+
+/* --- Buttons (Golden Style) --- */
+body.dark .btn-orange,
+body.dark .btn-search,
+body.dark .btn-apply,
+body.dark .signin-btn,
+body.dark .btn-primary,
+body.dark .checkout-btn {
+  background-color: #e6b912 !important; /* Golden Button */
+  color: #000000 !important; /* Black Text */
+  font-weight: 700;
+}
+body.dark .btn-orange:hover,
+body.dark .btn-search:hover,
+body.dark .btn-apply:hover,
+body.dark .signin-btn:hover,
+body.dark .btn-primary:hover,
+body.dark .checkout-btn:hover {
+  background-color: #cca30f !important; /* Darker Golden on Hover */
+}
+
+/* Outline Buttons */
+body.dark .btn-outline,
+body.dark .btn-secondary,
+body.dark .btn-advanced,
+body.dark .btn-clear {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+  border: 1px solid #27272a !important;
+}
+body.dark .btn-outline:hover,
+body.dark .btn-secondary:hover,
+body.dark .btn-advanced:hover,
+body.dark .btn-clear:hover {
+  border-color: #e6b912 !important;
+  color: #e6b912 !important;
+}
+
+/* --- Background Sections --- */
+body.dark .stats-bar,
+body.dark .newsletter-section,
+body.dark .footer {
+  background-color: #000000 !important;
+  border-top: 1px solid #27272a !important;
+  border-bottom: 1px solid #27272a !important;
+}
+
+body.dark .cta-banner {
+  background-color: #121212 !important;
+  border-color: #27272a !important;
+}
+body.dark .cta-banner h2 span {
+  color: #e6b912 !important; /* "smart?" text Golden */
+}
+
+/* --- Others --- */
+body.dark .comparison-box .our-store {
+  background-color: #e6b912 !important; /* Golden Box */
+  color: #000000 !important;
+}
+body.dark .comparison-box .our-store h3,
+body.dark .comparison-box .our-store p,
+body.dark .comparison-box .our-store li {
+  color: #000000 !important; /* Black text on Golden box */
+}
+body.dark .social-icons { color: #a1a1aa !important; }
+body.dark .add-to-cart-btn {
+  background-color: #e6b912 !important;
+  color: #000000 !important;
+}
+body.dark .cart-overlay { background: rgba(0, 0, 0, 0.9) !important; }
+body.dark .theme-toggle:hover { background: #27272a !important; }
+body.dark .slider { background-color: #3f3f46; }
+body.dark input:checked + .slider { background-color: #e6b912 !important; }
+
+/* Golden Text Highlights */
+body.dark .highlight,
+body.dark .hero-tag,
+body.dark .sub-heading,
+body.dark .view-all,
+body.dark .browse-link {
+  color: #e6b912 !important;
+}
+
+/* =========================================
+   3. CUSTOM SCROLLBAR STYLES
+   ========================================= */
+
+/* Scrollbar ki width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Light Mode Background (Track) */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+
+/* Light Mode Handle (Orange) */
+::-webkit-scrollbar-thumb {
+  background: #f05a28; 
+  border-radius: 10px;
+  border: 2px solid #f1f1f1; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #d94a1f; 
+}
+
+/* Dark Mode Background (Black) */
+body.dark ::-webkit-scrollbar-track {
+  background: #0a0a0a; 
+}
+
+/* Dark Mode Handle (Golden) */
+body.dark ::-webkit-scrollbar-thumb {
+  background: #e6b912; 
+  border-radius: 10px;
+  border: 2px solid #0a0a0a; 
+}
+
+body.dark ::-webkit-scrollbar-thumb:hover {
+  background: #cca30f; 
+}
+/* =========================================
+   GLOBAL RESPONSIVE DESIGN (Mobile/Tablet)
+   ========================================= */
+
+@media (max-width: 1024px) {
+  /* Tablet adjustments */
+  .hero-section { flex-direction: column; text-align: center; padding: 40px 20px; }
+  .hero-left h1 { font-size: 42px; }
+  .hero-badges { margin: 0 auto; justify-content: center; }
+  .products-grid, .category-grid, .features-grid, .reviews-grid { grid-template-columns: repeat(2, 1fr) !important; }
+  .footer-grid { grid-template-columns: 1fr 1fr !important; }
+}
+
+@media (max-width: 768px) {
+  /* Mobile adjustments */
+  .nav-main { flex-direction: column; padding: 15px; gap: 15px; }
+  .nav-links { flex-wrap: wrap; justify-content: center; gap: 15px; font-size: 14px; }
+  .nav-top-bar { display: none; /* Mobile par top bar hide */ }
+  
+  .hero-section { padding: 30px 15px; }
+  .hero-left h1 { font-size: 32px; line-height: 1.2; }
+  .hero-btns { flex-direction: column; width: 100%; }
+  .btn-orange, .btn-outline { width: 100%; justify-content: center; }
+  .hero-badges { flex-direction: column; gap: 10px; }
+
+  .products-grid, .category-grid, .features-grid, .reviews-grid { grid-template-columns: 1fr !important; }
+  .footer-grid { grid-template-columns: 1fr !important; text-align: center; }
+  .newsletter-section { flex-direction: column; gap: 20px; text-align: center; }
+  .newsletter-form { width: 100%; }
+  
+  .cart-grid, .checkout-grid { grid-template-columns: 1fr !important; }
+  .signin-page-container { flex-direction: column; }
+  .signin-left { display: none; /* Mobile par left side hide karein taake form acha lage */ }
+}

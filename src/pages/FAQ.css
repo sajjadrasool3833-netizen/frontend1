@@ -1,0 +1,81 @@
+.faq-page { max-width: 900px; margin: 0 auto; padding: 60px 20px; }
+
+/* =========================================
+   LIGHT MODE (Default)
+   ========================================= */
+
+/* Banner */
+.faq-banner { border: 1px dashed #ddd; border-radius: 20px; padding: 50px; text-align: center; margin-bottom: 60px; }
+.faq-banner h2 { font-size: 32px; font-weight: 800; margin-bottom: 15px; color: #111; }
+.faq-banner p { color: #666; margin-bottom: 25px; }
+.faq-banner .btn-outline { padding: 12px 30px; border-radius: 30px; border: 1px solid #ddd; background: white; font-weight: 600; cursor: pointer; color: #111; }
+
+/* Main Content */
+.faq-content .sub-heading { color: #f05a28; font-weight: 700; font-size: 13px; letter-spacing: 1px; margin-bottom: 10px; text-transform: uppercase; }
+.faq-content h1 { font-size: 42px; font-weight: 800; margin-bottom: 10px; color: #111; }
+.faq-content .desc { color: #666; margin-bottom: 40px; }
+
+/* FAQ Items */
+.faq-list { display: flex; flex-direction: column; gap: 15px; }
+.faq-item { border: 1px solid #eee; border-radius: 12px; overflow: hidden; background: white; }
+.faq-question { display: flex; justify-content: space-between; align-items: center; padding: 25px; cursor: pointer; background: white; }
+.faq-question h3 { font-size: 16px; font-weight: 700; color: #222; }
+.icon-circle { width: 30px; height: 30px; border-radius: 50%; background: #fff5f0; display: flex; align-items: center; justify-content: center; transition: 0.3s; color: #f05a28; }
+.icon-circle.active { background: #f05a28; color: white; }
+.faq-answer { padding: 0 25px 25px; color: #666; font-size: 15px; line-height: 1.6; }
+
+/* =========================================
+   DARK MODE OVERRIDES (Screenshot jaisa)
+   ========================================= */
+
+/* Page Background */
+body.dark .faq-page {
+  background-color: #000000; /* Pura Black */
+}
+
+/* Banner */
+body.dark .faq-banner { 
+  border-color: #27272a; 
+  background-color: #0a0a0a;
+}
+body.dark .faq-banner h2 { color: #ffffff; }
+body.dark .faq-banner p { color: #a1a1aa; }
+body.dark .faq-banner .btn-outline { 
+  border-color: #27272a; 
+  background: #121212; 
+  color: #ffffff; 
+}
+body.dark .faq-banner .btn-outline:hover {
+  border-color: #e6b912;
+  color: #e6b912;
+}
+
+/* Main Content Text */
+body.dark .faq-content .sub-heading { color: #e6b912; /* Golden Tag */ }
+body.dark .faq-content h1 { color: #ffffff; /* White Heading */ }
+body.dark .faq-content .desc { color: #a1a1aa; }
+
+/* FAQ Items Box */
+body.dark .faq-item { 
+  border: 1px solid #27272a; 
+  background-color: #0a0a0a; /* Dark Gray/Black Box */
+}
+body.dark .faq-question { 
+  background-color: #0a0a0a; 
+}
+body.dark .faq-question h3 { 
+  color: #ffffff; /* White Question Text */
+}
+body.dark .faq-answer { 
+  color: #a1a1aa; /* Gray Answer Text */
+}
+
+/* Icons (Plus / Cross) */
+body.dark .icon-circle { 
+  background: #1f1f1f; /* Dark Circle */
+  color: #e6b912; /* Golden Plus */
+}
+body.dark .icon-circle.active { 
+  background: #e6b912; /* Golden Circle when active */
+  color: #000000; /* Black Cross */
+}

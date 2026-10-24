@@ -1,0 +1,258 @@
+/* =========================================
+   BASE STYLES (Light Mode)
+   ========================================= */
+.track-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  font-family: 'Inter', sans-serif;
+}
+
+.track-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.track-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #fff5f0;
+  color: #f05a28;
+  padding: 8px 16px;
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.track-header h1 {
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 15px;
+  color: #111;
+}
+
+.track-header p {
+  color: #666;
+  font-size: 16px;
+}
+
+/* Form Card */
+.track-form-card {
+  background: white;
+  border: 1px solid #eee;
+  padding: 40px;
+  border-radius: 20px;
+  text-align: left;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+}
+
+.form-title-row {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.search-icon-box {
+  background: #fff5f0;
+  padding: 12px;
+  border-radius: 10px;
+}
+
+.form-title-row h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #111;
+}
+
+.form-title-row p {
+  color: #888;
+  font-size: 14px;
+}
+
+/* Inputs */
+.track-inputs {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.input-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group label {
+  font-size: 12px;
+  font-weight: 700;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.input-group input:focus {
+  border-color: #f05a28;
+}
+
+.or-divider {
+  font-weight: 700;
+  color: #888;
+  margin-top: 25px;
+}
+
+.track-btn {
+  width: 100%;
+  background: #f05a28;
+  color: white;
+  padding: 16px;
+  border: none;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.track-btn:hover {
+  background: #d94a1f;
+}
+
+.track-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+/* Error Message */
+.track-error {
+  background: #fee2e2;
+  color: #dc2626;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Result Card */
+.order-result-card {
+  margin-top: 30px;
+  background: #fafafa;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 25px;
+}
+
+.order-result-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+
+.order-result-header h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 5px;
+}
+
+.order-result-header p {
+  font-size: 13px;
+  color: #888;
+}
+
+.status-badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: white;
+  padding: 8px 15px;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.order-items-list {
+  margin-bottom: 15px;
+}
+
+.order-item-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.order-total-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: 800;
+  color: #111;
+  border-top: 1px solid #ddd;
+  padding-top: 15px;
+  margin-bottom: 15px;
+}
+
+.shipping-info {
+  font-size: 14px;
+  color: #666;
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #eee;
+}
+
+/* =========================================
+   DARK MODE OVERRIDES
+   ========================================= */
+body.dark .track-page { background-color: #000; }
+body.dark .track-badge { background: #1f1f1f; color: #e6b912; }
+body.dark .track-header h1 { color: #fff; }
+body.dark .track-header p { color: #a1a1aa; }
+
+body.dark .track-form-card { background: #0a0a0a; border-color: #27272a; }
+body.dark .search-icon-box { background: #1f1f1f; }
+body.dark .search-icon-box svg { color: #e6b912; }
+body.dark .form-title-row h2 { color: #fff; }
+body.dark .form-title-row p { color: #a1a1aa; }
+
+body.dark .input-group label { color: #a1a1aa; }
+body.dark .input-group input { background: #121212; border-color: #27272a; color: #fff; }
+
+body.dark .track-btn { background: #e6b912; color: #000; }
+body.dark .track-btn:hover { background: #cca30f; }
+
+body.dark .track-error { background: #450a0a; color: #f87171; }
+
+body.dark .order-result-card { background: #121212; border-color: #27272a; }
+body.dark .order-result-header { border-color: #27272a; }
+body.dark .order-result-header h3 { color: #fff; }
+body.dark .order-result-header p { color: #888; }
+body.dark .status-badge { background: #0a0a0a; border-color: #27272a; color: #fff; }
+body.dark .order-item-row { color: #a1a1aa; }
+body.dark .order-total-row { color: #e6b912; border-color: #27272a; }
+body.dark .shipping-info { background: #0a0a0a; border-color: #27272a; color: #a1a1aa; }

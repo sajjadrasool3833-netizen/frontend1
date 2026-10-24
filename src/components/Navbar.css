@@ -1,0 +1,81 @@
+/* =========================================
+   MOBILE MENU & RESPONSIVE NAVBAR
+   ========================================= */
+
+/* Mobile Menu Button (Default mein hide) */
+.mobile-menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: #111;
+  cursor: pointer;
+}
+
+/* Mobile Sidebar Menu (Default mein hide) */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: -100%; /* Shuru mein screen ke bahar */
+  width: 70%;
+  height: 100vh;
+  background: #ffffff;
+  z-index: 1000;
+  padding: 80px 30px 30px;
+  transition: right 0.4s ease;
+  box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+}
+
+.mobile-menu.open {
+  right: 0; /* Open hone par screen par aaye */
+}
+
+.mobile-menu ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.mobile-menu ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  color: #111;
+  display: block;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.mobile-menu .mobile-signin {
+  background: #f05a28;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  border-radius: 30px;
+  margin-top: 20px;
+  border-bottom: none;
+}
+
+/* Responsive Trigger */
+@media (max-width: 900px) {
+  .nav-links { display: none; } /* Desktop links hide */
+  .signin-btn { display: none; }
+  .mobile-menu-btn { display: block; } /* Hamburger show */
+}
+
+/* Dark Mode for Mobile Menu */
+body.dark .mobile-menu {
+  background: #0a0a0a;
+}
+body.dark .mobile-menu ul li a {
+  color: #ffffff;
+  border-bottom: 1px solid #27272a;
+}
+body.dark .mobile-menu-btn {
+  color: #ffffff;
+}
+body.dark .mobile-menu .mobile-signin {
+  background: #e6b912;
+  color: #000;
+}

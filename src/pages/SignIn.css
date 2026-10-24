@@ -1,0 +1,380 @@
+.signin-page-container {
+  display: flex;
+  min-height: 90vh;
+  background: #fff;
+}
+
+/* =========================================
+   LEFT SIDE (Black Box)
+   ========================================= */
+.signin-left {
+  flex: 1;
+  background: #1a1a1a; /* Dark Black */
+  color: #fff;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.signin-brand h1 {
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin: 0;
+  line-height: 1;
+}
+.signin-brand span {
+  font-size: 12px;
+  color: #e6b912; /* Golden */
+  letter-spacing: 4px;
+  font-weight: 600;
+}
+
+.signin-left-content h2 {
+  font-size: 42px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+.signin-left-content h2 span {
+  color: #e6b912; /* Golden "back" */
+  font-style: italic;
+  font-family: 'Georgia', serif;
+}
+.signin-left-content p {
+  color: #a1a1aa;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.signin-features {
+  list-style: none;
+  padding: 0;
+}
+.signin-features li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #d1d5db;
+  margin-bottom: 15px;
+  font-size: 15px;
+}
+.signin-features li svg {
+  color: #e6b912; /* Golden Icons */
+}
+
+.signin-footer p {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+/* =========================================
+   RIGHT SIDE (Form)
+   ========================================= */
+.signin-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  background: #fafafa;
+}
+
+.signin-form-wrapper {
+  width: 100%;
+  max-width: 450px;
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.form-tag {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 5px;
+}
+.signin-form-wrapper h2 {
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+.form-desc {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+.form-group label {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  color: #444;
+  margin-bottom: 8px;
+  letter-spacing: 0.5px;
+}
+.label-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.forgot-link {
+  color: #f05a28;
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* Inputs with Icons */
+.input-icon-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.input-icon-wrapper input {
+  width: 100%;
+  padding: 15px 15px 15px 45px; /* Space for icon */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  transition: 0.3s;
+}
+.input-icon-wrapper input:focus {
+  border-color: #f05a28;
+}
+.input-icon {
+  position: absolute;
+  left: 15px;
+  color: #888;
+}
+.toggle-password {
+  position: absolute;
+  right: 15px;
+  background: none;
+  border: none;
+  color: #888;
+  cursor: pointer;
+}
+
+/* Remember Me */
+.form-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.remember-me {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #555;
+  cursor: pointer;
+}
+.remember-me input {
+  accent-color: #f05a28;
+}
+
+/* Submit Button */
+.signin-submit-btn {
+  width: 100%;
+  background: #f05a28;
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.signin-submit-btn:hover {
+  background: #d94a1f;
+}
+
+/* Toggle Link */
+.toggle-auth {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 14px;
+  color: #666;
+}
+.toggle-auth span {
+  color: #f05a28;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* Error Alert */
+.error-alert {
+  background: #fee2e2;
+  color: #dc2626;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+/* Success Alert (Email Verified ke liye) */
+.success-alert {
+  background: #dcfce7;
+  color: #166534;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* =========================================
+   VERIFICATION SCREEN (Check your inbox)
+   ========================================= */
+.verification-screen {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.icon-wrapper {
+  background: #fff5f0;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.verification-screen h2 {
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.verify-text {
+  color: #666;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.verify-email {
+  background: #fff5f0;
+  color: #f05a28;
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.verify-desc {
+  color: #888;
+  font-size: 14px;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+/* Outline Button */
+.btn-outline {
+  width: 100%;
+  background: transparent;
+  border: 1px solid #ddd;
+  color: #333;
+  padding: 15px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: 0.3s;
+}
+.btn-outline:hover {
+  border-color: #f05a28;
+  color: #f05a28;
+}
+
+/* =========================================
+   RESPONSIVE (Mobile)
+   ========================================= */
+@media (max-width: 768px) {
+  .signin-page-container {
+    flex-direction: column;
+  }
+  .signin-left {
+    padding: 40px 20px;
+  }
+  .signin-right {
+    padding: 20px;
+  }
+  .signin-form-wrapper {
+    padding: 25px;
+  }
+}
+
+/* =========================================
+   DARK MODE OVERRIDES
+   ========================================= */
+body.dark .signin-right {
+  background: #000;
+}
+body.dark .signin-form-wrapper {
+  background: #0a0a0a;
+  border: 1px solid #27272a;
+}
+body.dark .signin-form-wrapper h2,
+body.dark .form-group label,
+body.dark .remember-me,
+body.dark .verification-screen h2 {
+  color: #fff;
+}
+body.dark .form-tag,
+body.dark .form-desc,
+body.dark .verify-text,
+body.dark .verify-desc {
+  color: #a1a1aa;
+}
+body.dark .input-icon-wrapper input {
+  background: #121212;
+  border-color: #27272a;
+  color: #fff;
+}
+body.dark .signin-submit-btn {
+  background: #e6b912;
+  color: #000;
+}
+body.dark .signin-submit-btn:hover {
+  background: #cca30f;
+}
+body.dark .verify-email {
+  background: #27272a;
+  color: #e6b912;
+}
+body.dark .btn-outline {
+  border-color: #27272a;
+  color: #fff;
+}
+body.dark .btn-outline:hover {
+  border-color: #e6b912;
+  color: #e6b912;
+}
+body.dark .icon-wrapper {
+  background: #1f1f1f;
+}
+body.dark .success-alert {
+  background: #064e3b;
+  color: #34d399;
+}

@@ -1,0 +1,108 @@
+/* =========================================
+   BASE STYLES (Light Mode)
+   ========================================= */
+.cart-page { max-width: 1200px; margin: 0 auto; padding: 60px 20px; font-family: 'Inter', sans-serif; }
+
+/* Header Section */
+.cart-header-section { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 30px; }
+.sub-heading { color: #666; font-size: 14px; margin-bottom: 5px; }
+.cart-header-section h1 { font-size: 42px; font-weight: 800; color: #111; margin-bottom: 10px; font-family: 'Georgia', serif; }
+.item-count { color: #888; font-size: 14px; }
+.continue-shopping { display: flex; align-items: center; gap: 5px; color: #666; text-decoration: none; font-size: 14px; font-weight: 500; transition: 0.3s; }
+.continue-shopping:hover { color: #f05a28; }
+
+/* Free Shipping Bar */
+.free-shipping-bar { display: flex; align-items: center; gap: 10px; background: #fafafa; padding: 15px 20px; border-radius: 10px; margin-bottom: 30px; font-size: 14px; color: #333; border: 1px solid #eee; }
+.free-shipping-bar svg { color: #f05a28; }
+
+/* Grid Layout */
+.cart-grid { display: grid; grid-template-columns: 1.8fr 1fr; gap: 30px; align-items: start; }
+
+/* Cart Items */
+.cart-items-list { display: flex; flex-direction: column; gap: 15px; }
+.cart-item-card { display: flex; align-items: center; gap: 20px; background: white; padding: 20px; border-radius: 15px; border: 1px solid #eee; box-shadow: 0 4px 15px rgba(0,0,0,0.02); }
+.cart-item-card img { width: 100px; height: 100px; object-fit: cover; border-radius: 10px; background: #f9f9f9; }
+
+.item-details { flex: 1; }
+.item-details h3 { font-size: 18px; font-weight: 700; color: #111; margin-bottom: 15px; line-height: 1.4; }
+
+/* Quantity Control */
+.quantity-control { display: flex; align-items: center; gap: 15px; background: #f9f9f9; padding: 5px 15px; border-radius: 20px; width: fit-content; border: 1px solid #eee; }
+.quantity-control button { background: none; border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; color: #555; }
+.quantity-control span { font-weight: 600; font-size: 14px; color: #111; }
+
+.item-price-section { display: flex; flex-direction: column; align-items: flex-end; gap: 15px; }
+.item-price { font-size: 18px; font-weight: 800; color: #f05a28; }
+.delete-btn { background: none; border: none; cursor: pointer; color: #888; transition: 0.3s; }
+.delete-btn:hover { color: #dc2626; }
+
+/* Clear Cart Button */
+.clear-cart-btn { display: flex; align-items: center; gap: 8px; background: transparent; border: 1px solid #ddd; padding: 10px 20px; border-radius: 20px; font-weight: 600; color: #555; cursor: pointer; width: fit-content; margin-top: 10px; transition: 0.3s; }
+.clear-cart-btn:hover { border-color: #dc2626; color: #dc2626; }
+
+/* Order Summary */
+.order-summary-section { background: #fafafa; padding: 30px; border-radius: 15px; border: 1px solid #eee; }
+.order-summary-section h2 { font-size: 24px; font-weight: 800; margin-bottom: 25px; color: #111; font-family: 'Georgia', serif; }
+
+.summary-row { display: flex; justify-content: space-between; margin-bottom: 15px; color: #555; font-size: 15px; }
+.summary-row.total-row { border-top: 1px solid #ddd; padding-top: 20px; margin-top: 20px; font-size: 20px; font-weight: 800; color: #111; }
+.summary-row.total-row span:last-child { color: #f05a28; }
+
+.place-order-btn { width: 100%; background: #f05a28; color: white; padding: 16px; border: none; border-radius: 8px; font-weight: 700; font-size: 16px; cursor: pointer; transition: 0.3s; margin-top: 20px; }
+.place-order-btn:hover { background: #d94a1f; }
+
+/* Empty Cart */
+.empty-cart-page { display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 60vh; text-align: center; padding: 20px; }
+.empty-cart-page h2 { font-size: 32px; font-weight: 800; margin: 20px 0 10px; }
+.empty-cart-page p { color: #666; margin-bottom: 30px; }
+.empty-cart-page .btn-primary { background: #f05a28; color: white; padding: 12px 30px; border-radius: 30px; font-weight: 600; }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cart-grid { grid-template-columns: 1fr; }
+  .cart-header-section { flex-direction: column; align-items: flex-start; gap: 15px; }
+  .cart-item-card { flex-direction: column; text-align: center; }
+  .item-price-section { align-items: center; }
+}
+
+/* =========================================
+   DARK MODE OVERRIDES (Screenshot jaisa Black & Gold)
+   ========================================= */
+body.dark .cart-page { background-color: #000000; }
+
+/* Headings */
+body.dark .sub-heading, 
+body.dark .item-count, 
+body.dark .continue-shopping { color: #a1a1aa; }
+body.dark .cart-header-section h1 { color: #ffffff; }
+
+/* Free Shipping Bar */
+body.dark .free-shipping-bar { background-color: #0a0a0a; border-color: #27272a; color: #ffffff; }
+body.dark .free-shipping-bar svg { color: #e6b912; }
+
+/* Cart Item Cards */
+body.dark .cart-item-card { background-color: #0a0a0a; border-color: #27272a; }
+body.dark .item-details h3 { color: #ffffff; }
+body.dark .item-price { color: #e6b912; }
+
+/* Quantity Control */
+body.dark .quantity-control { background-color: #121212; border-color: #27272a; }
+body.dark .quantity-control button { color: #a1a1aa; }
+body.dark .quantity-control span { color: #ffffff; }
+
+/* Buttons */
+body.dark .delete-btn { color: #71717a; }
+body.dark .delete-btn:hover { color: #ef4444; }
+body.dark .clear-cart-btn { border-color: #27272a; color: #a1a1aa; }
+body.dark .clear-cart-btn:hover { border-color: #e6b912; color: #e6b912; }
+
+/* Order Summary Box */
+body.dark .order-summary-section { background-color: #0a0a0a; border-color: #27272a; }
+body.dark .order-summary-section h2 { color: #ffffff; }
+body.dark .summary-row { color: #a1a1aa; }
+body.dark .summary-row.total-row { color: #ffffff; border-color: #27272a; }
+body.dark .summary-row.total-row span:last-child { color: #e6b912; } 
+
+/* Place Order Button */
+body.dark .place-order-btn { background: #e6b912; color: #000000; }
+body.dark .place-order-btn:hover { background: #cca30f; }
