@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const API = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || 'https://backend-pearl-pi-86.vercel.app/'  ,
+  baseURL: import.meta.env.VITE_API_URL || 'https://backend-pearl-pi-86.vercel.app/api'  ,
 });
 
 // Automatically token attach karein agar user login hai
